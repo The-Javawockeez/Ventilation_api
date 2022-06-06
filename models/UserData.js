@@ -8,9 +8,9 @@ const postSchema = new mongoose.Schema({
 })
 
 const userDataSchema = new mongoose.Schema({
-    username: String,
+    userName: String,
     userDetails: String,
-    userPosts: [{ type: mongoose.Types.ObjectId, ref: 'Post' }]
+    userPosts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Post' }]
 })
 
 const Post = mongoose.model('Post', postSchema)

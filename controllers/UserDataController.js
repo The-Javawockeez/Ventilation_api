@@ -8,4 +8,10 @@ router.get('/', (req, res) => {
         .then(data => res.status(200).json({ data: data }))
 })
 
+router.post('/', (req, res) => {
+    const data = req.body
+    UserData.create(data)
+        .then(post => res.status(201).json({ post: post }))
+})
+
 module.exports = router 
