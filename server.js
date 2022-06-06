@@ -1,10 +1,8 @@
 // Require in dependencies
 require('dotenv').config()
 const express = require('express')
-const MainPageController = require('./controllers/MainPageController')
 const UserDataController = require('./controllers/UserDataController')
 const cors = require('cors')
-
 
 // Define port
 const PORT = process.env.PORT
@@ -18,9 +16,7 @@ app.use(cors())
 // Accept Json as req.body
 app.use(express.json())
 
-
 // Routes
-app.use('/home', MainPageController)
 app.use('/user', UserDataController)
 
 // Set port
