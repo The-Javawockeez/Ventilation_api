@@ -21,7 +21,7 @@ app.use(cors())
 app.use(express.json())
 
 // Routes
-app.use('/user', UserDataController)
+app.use('/Ventilation-api/user', UserDataController)
 app.get('/Ventilation-api', (req, res) => {
     res.send("hello world")
 })
