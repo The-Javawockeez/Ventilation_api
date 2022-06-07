@@ -5,6 +5,7 @@ const UserDataController = require('./controllers/UserDataController')
 const cors = require('cors')
 const res = require('express/lib/response')
 
+
 // Define port
 const PORT = process.env.PORT
 
@@ -20,9 +21,9 @@ app.use(cors())
 app.use(express.json())
 
 // Routes
-// app.use('/user', UserDataController)
-app.post('/', (req, res) => {
-    res.json("hello world")
+app.use('/user', UserDataController)
+app.get('/Ventilation-api', (req, res) => {
+    res.send("hello world")
 })
 
 // Set port
