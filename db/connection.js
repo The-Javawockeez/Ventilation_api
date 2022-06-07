@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-mongoose.connect("mongodb://localhost:3000/Ventilation-api", { useNewUrlParser: true })
+mongoose.connect("mongodb://localhost:27017/Ventilation-api")
 
 
 module.exports = mongoose
