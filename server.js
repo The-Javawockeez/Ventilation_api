@@ -2,9 +2,9 @@
 require('dotenv').config()
 const express = require('express')
 const UserDataController = require('./controllers/UserDataController')
+const Advice = require('./controllers/AdviceConroller')
 const cors = require('cors')
 const res = require('express/lib/response')
-
 
 // Define port
 const PORT = process.env.PORT
@@ -21,10 +21,8 @@ app.use(cors())
 app.use(express.json())
 
 // Routes
-app.use('/Ventilation-api/user', UserDataController)
-app.get('/Ventilation-api', (req, res) => {
-    res.send("hello world")
-})
+app.use('/Ventilation-api/', UserDataController)
+app.use('/Ventilation-api/advice/', Advice)
 
 app.set("port", process.env.PORT || 8080);
 
