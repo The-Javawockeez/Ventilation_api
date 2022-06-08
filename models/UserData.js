@@ -1,18 +1,11 @@
 const mongoose = require('../db/connection')
 
-const postSchema = new mongoose.Schema({
-    post: [{
-        title: String,
-        content: String
-    }]
-})
-
 const userDataSchema = new mongoose.Schema({
-    username: String,
+    userName: String,
     userDetails: String,
-    userPosts: [{ type: mongoose.Types.ObjectId, ref: 'Post' }]
+    title: String,
+    content: String
 })
 
-const Post = mongoose.model('Post', postSchema)
 
 module.exports = mongoose.model("UserData", userDataSchema)
