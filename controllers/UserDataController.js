@@ -28,4 +28,10 @@ router.delete('/:id', (req, res) => {
     .then((updatedPost) => res.status(204).json({updatedPost: updatedPost}))
 })
 
+// Find by username
+router.get('/:username', (req, res) => {
+    UserData.find({userName: req.params.username})
+    .then((username) => res.status(201).json({username: username}))
+})
+
 module.exports = router 
