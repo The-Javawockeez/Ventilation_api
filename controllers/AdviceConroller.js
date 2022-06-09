@@ -25,4 +25,10 @@ router.patch('/:id', (req, res) => {
         .then((updatedPost) => res.status(201).json({ updatedPost: updatedPost }))
 })
 
+//delete a post by id
+router.delete('/:id', (req, res) => {
+    Advice.findByIdAndDelete(req.params.id)
+    .then((deletedPost) => res.status(204).json({deletedPost: deletedPost}))
+})
+
 module.exports = router
