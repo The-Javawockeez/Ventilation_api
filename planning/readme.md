@@ -28,21 +28,23 @@ Our users are people who just need to get things off their chest. Those who need
 | Component | Priority | Estimated Time | Actual Time |
 | :----: | :----: | :----: | :----: |
 | Routes |	H	| 1.5hrs| 	- |
-|Get all posts  | H	    |1hr    | 4hrs |
-|Create posts   |	H	|1hr    | 4hrs |
-|Remove posts   |	H	|1hr    | 5hrs |
+|Get all posts  | H	    |1hr    | 8hrs |
+|Create posts   |	H	|1hr    | 8hrs |
+|Remove posts   |	H	|1hr    | 8hrs |
 |Edit posts     |	H	|1hr    | 7hrs |
-|Nav bar        |	H	|1hr    |	-|
-|About page     |	H	|2hrs   |	1.5 hrs|
-|Page styling   |	M	|8hrs   |	-|
+|Nav bar        |	H	|1hr    |	1.5hrs |
+|About page     |	H	|2hrs   |	1.5hrs |
+|Page styling   |	M	|8hrs   |	2hrs|
 |Deploying      |	M	|4hrs   |	2hrs |
 |Search function|	M	|3hrs   |	0hr |
 |Flag / save list|	M	|2hrs   |	0hr |
 |Life Advice Page|	H	|3.5hrs | 8hrs |
 |Upvote filtering system|	L	|6hrs|	0hr |
 |Hamburger nav  |	L	|1hr    |	0hr |
-|Total          |	    |31hrs  |	31.5hrs |
+|Total          |	    |31hrs  |	46hrs |
 
 ### Descriptions of any unsolved problems or hurdles your team had to overcome.
 
 Our unsolved problem is currently in our comment section of the Life Advice page. The comments are not able to properly post at this current stage.
+
+Some major hurdles included working with two different fetch urls in the API and spending an entire day working on a post function in React only to have to redo all of it the next day.
