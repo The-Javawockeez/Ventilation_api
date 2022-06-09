@@ -27,7 +27,7 @@ router.patch('/:id', (req, res) => {
 
 //delete a post by id
 router.delete('/:id', (req, res) => {
-    UserData.findByIdAndDelete(req.params.id)
+    Advice.findByIdAndDelete(req.params.id)
     .then((deletedPost) => res.status(204).json({deletedPost: deletedPost}))
 })
 
